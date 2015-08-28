@@ -20,7 +20,7 @@
  *
  */
 
-package burstcoin.address.generator;
+package burstcoin.address.generator.core;
 
 import java.util.Collection;
 import java.util.HashSet;

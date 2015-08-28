@@ -58,7 +58,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>burstcoin.address.generator.GeneratorApp</mainClass>
+              <mainClass>burstcoin.address.generator.gui.GeneratorApp</mainClass>
             </manifest>
           </archive>
         </configuration>

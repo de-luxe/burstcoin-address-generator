@@ -20,7 +20,7 @@
  *
  */
 
-package burstcoin.address.generator;
+package burstcoin.address.generator.core;
 
 import akka.actor.UntypedActor;
 import crypto.Curve25519;

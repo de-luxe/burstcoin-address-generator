@@ -20,7 +20,7 @@
  *
  */
 
-package burstcoin.address.generator;
+package burstcoin.address.generator.core;
 
 import burstcoin.address.generator.gui.result.ResultModel;
 

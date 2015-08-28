@@ -20,7 +20,7 @@
  *
  */
 
-package burstcoin.address.generator;
+package burstcoin.address.generator.core;
 
 /**
  * The type Generate work msg.

@@ -20,10 +20,12 @@
  *
  */
 
-package burstcoin.address.generator;
+package burstcoin.address.generator.gui;
 
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import burstcoin.address.generator.core.GenerateActor;
+import burstcoin.address.generator.core.GeneratorConfig;
 import burstcoin.address.generator.gui.result.ResultController;
 import burstcoin.address.generator.gui.tabs.GeneratorConfigPresenter;
 import burstcoin.address.generator.gui.tabs.GeneratorConfigView;
@@ -126,7 +128,7 @@ public class GeneratorApp
   {
     FXMLLoader loader = new FXMLLoader();
     // set fxml location
-    loader.setLocation(getClass().getResource("gui/result/Result.fxml"));
+    loader.setLocation(getClass().getResource("result/Result.fxml"));
     // load and add
     Node node = loader.load();
     String uuid = view.addContent("result", node);

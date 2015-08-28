@@ -22,8 +22,8 @@
 
 package burstcoin.address.generator.gui.result;
 
-import burstcoin.address.generator.GenerateActor;
-import burstcoin.address.generator.GeneratorConfig;
+import burstcoin.address.generator.core.GenerateActor;
+import burstcoin.address.generator.core.GeneratorConfig;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;

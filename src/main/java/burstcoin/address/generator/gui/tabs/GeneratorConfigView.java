@@ -22,7 +22,7 @@
 
 package burstcoin.address.generator.gui.tabs;
 
-import burstcoin.address.generator.GeneratorConfig;
+import burstcoin.address.generator.core.GeneratorConfig;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
