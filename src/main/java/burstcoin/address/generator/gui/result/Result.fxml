@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+
+<GridPane styleClass="result" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="burstcoin.address.generator.gui.result.ResultController">
+
+  <children>
+    <Label fx:id="label" alignment="CENTER" prefHeight="20.0" prefWidth="3600.0" text="0% done" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS"
+           GridPane.rowIndex="0"/>
+    <ProgressBar fx:id="progress" prefHeight="20.0" prefWidth="3600.0" progress="0.0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1"/>
+    <TableView fx:id="resultTableView" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+
+      <columns>
+
+        <TableColumn prefWidth="270" text="address">
+          <cellValueFactory>
+            <PropertyValueFactory property="address"/>
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100" text="key">
+          <cellValueFactory>
+            <PropertyValueFactory property="key"/>
+          </cellValueFactory>
+        </TableColumn>
+
+        <TableColumn prefWidth="100" text="time">
+          <cellValueFactory>
+            <PropertyValueFactory property="time"/>
+          </cellValueFactory>
+        </TableColumn>
+
+        <TableColumn prefWidth="100" text="try">
+          <cellValueFactory>
+            <PropertyValueFactory property="tries"/>
+          </cellValueFactory>
+        </TableColumn>
+
+      </columns>
+    </TableView>
+    <TextArea fx:id="passwordTextArea" prefHeight="120" promptText="select result to display and copy password from here" wrapText="true" GridPane.hgrow="NEVER"
+              GridPane.rowIndex="3" GridPane.vgrow="NEVER">
+      <font>
+        <Font size="10.0"/>
+      </font>
+    </TextArea>
+    <Button fx:id="button" GridPane.columnIndex="0" alignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+
+    </Button>
+
+  </children>
+
+  <stylesheets>
+    <URL value="@Result.css"/>
+  </stylesheets>
+  <columnConstraints>
+    <ColumnConstraints percentWidth="100.0"/>
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+    <RowConstraints/>
+    <RowConstraints/>
+    <RowConstraints/>
+    <RowConstraints/>
+  </rowConstraints>
+
+</GridPane>
